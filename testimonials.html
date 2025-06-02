@@ -11,23 +11,37 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-<div class="container-fluid">
-<a class="navbar-brand" href="/">Force of Nature</a>
-<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="/our-story.html">Our Story</a></li>
-<li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="/gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="/testimonials.html">Testimonials</a></li>
-<li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/assets/images/logo.png"  style="height: 30px; margin-right: 10px;">
+      <span>Force of Nature Tree Works</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown me-2">
+          <a class="nav-link pill-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdownAbout">
+            <li><a class="dropdown-item text-white" href="/gallery.html">Gallery</a></li>
+            <li><a class="dropdown-item text-white" href="/our-story.html">Our Story</a></li>
+            <li><a class="dropdown-item text-white" href="/testimonials.html">Testimonials</a></li>
+            <li><a class="dropdown-item text-white" href="/blog">Blog</a></li>
+          </ul>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link pill-link" href="/contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill-link" href="/services.html">Services</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <!-- Hero Section -->
 <section class="container py-5"><h1>Testimonials</h1><blockquote>“Professional, quick, and clean!” – Jane D.</blockquote><blockquote>“Flawless oak removal.” – Tom H.</blockquote></section>
