@@ -1,3 +1,7 @@
+---
+permalink: /tree-site/gallery.html
+layout: default
+---
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,210 +13,15 @@
 <link href="/assets/style.css" rel="stylesheet"/>
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="/tree-site">
-      <img src="/assets/images/logo.png"  style="height: 30px; margin-right: 10px;">
-      <span>Force of Nature Tree Works</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item dropdown me-2">
-          <a class="nav-link pill-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            About Us
-          </a>
-          <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdownAbout">
-            <li><a class="dropdown-item text-white" href="/tree-site/gallery.html">Gallery</a></li>
-            <li><a class="dropdown-item text-white" href="/tree-site/our-story.html">Our Story</a></li>
-            <li><a class="dropdown-item text-white" href="/tree-site/testimonials.html">Testimonials</a></li>
-            <li><a class="dropdown-item text-white" href="/tree-site/blog.html">Blog</a></li>
-          </ul>
-        </li>
-        <li class="nav-item me-2">
-          <a class="nav-link pill-link" href="/tree-site/contact.html">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link pill-link" href="/tree-site/services.html">Services</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <section class="container py-5">
     <h1 class="text-center mb-4">Our Projects Showcase</h1>
     <p class="lead text-center mb-5">Discover our expertise through recent projects and impressive transformations.</p>
 
-    <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0">
-            <div class="card p-4 shadow-sm rounded-lg h-100">
-                <div id="image-description-content">
-                    <h3 class="card-title text-success">Expert Tree Pruning</h3>
-                    <p class="card-text text-muted">
-                        Our skilled arborists meticulously prune trees to enhance their health, appearance, and structural integrity. From crown thinning to deadwood removal, we ensure your trees thrive and look their best.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div id="imageCarousel" class="carousel slide carousel-fade shadow-lg rounded-lg" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner rounded-lg">
-                    <div class="carousel-item active" data-description-index="0">
-                        <img src="/assets/images/gallery-pruning.jpg" class="d-block w-100 rounded-lg" alt="Tree Pruning" style="height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item" data-description-index="1">
-                        <img src="/assets/images/gallery-removal.jpg" class="d-block w-100 rounded-lg" alt="Tree Removal" style="height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item" data-description-index="2">
-                        <img src="/assets/images/gallery-stump.jpg" class="d-block w-100 rounded-lg" alt="Stump Grinding" style="height: 400px; object-fit: cover;">
-                    </div>
-                    <div class="carousel-item" data-description-index="3">
-                        <img src="/assets/images/gallery-cleanup.jpg" class="d-block w-100 rounded-lg" alt="Storm Cleanup" style="height: 400px; object-fit: cover;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
+{% include gallery/main_image.html %}
 
 
-<!-- Hero Section -->
-<section class="container py-5"><h1>Gallery</h1><p>Add your photos here.</p></section>
-<!-- Trust Indicators -->
-<section class="bg-white text-center py-4">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-3">
-<img alt="Trustpilot Badge" class="img-fluid mb-2" src="/assets/images/trustpilot-badge.png"/>
-<p>Rated 5 Stars on Trustpilot</p>
-</div>
-<div class="col-md-3">
-<img alt="Fully Insured" class="img-fluid mb-2" src="/assets/images/insurance-badge.png"/>
-<p>Fully Insured &amp; Certified</p>
-</div>
-<div class="col-md-3">
-<img alt="Eco-Friendly" class="img-fluid mb-2" src="/assets/images/environment-badge.png"/>
-<p>Eco-Friendly Practices</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Overview -->
-<section class="bg-light py-5">
-<div class="container">
-<h2 class="text-center mb-4">Our Services</h2>
-<div class="row text-center">
-<div class="col-md-4">
-<h4>Tree Pruning</h4>
-<p>Enhancing tree health and aesthetics through expert pruning techniques.</p>
-</div>
-<div class="col-md-4">
-<h4>Tree Removal</h4>
-<p>Safe and efficient removal of hazardous or unwanted trees.</p>
-</div>
-<div class="col-md-4">
-<h4>Stump Grinding</h4>
-<p>Complete removal of tree stumps to restore your landscape.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<!-- Footer -->
-  <footer class="bg-success text-white mt-5 rounded-top-5">
-    <div class="container py-4">
-        <!-- Top nav links -->
-        <div class="d-flex justify-content-center mb-3 pt-2">
-          <a href="/tree-site/gallery.html" class="text-white text-decoration-none mx-3">Gallery</a>
-          <a href="/tree-site/our-story.html" class="text-white text-decoration-none mx-3">Our Story</a>
-          <a href="/tree-site/testimonials.html" class="text-white text-decoration-none mx-3">Testimonials</a>
-          <a href="/tree-site/blog/" class="text-white text-decoration-none mx-3">Blog</a>
-        </div>
 
-        <!-- Values paragraph -->
-        <div class="text-center mb-4 px-3">
-          <h5>Our Values</h5>
-          <p class="mb-0">
-            At Force of Nature Tree Services, we value professionalism, safety, and environmental responsibility.
-            We aim to deliver high-quality arborist services that respect both our clients and the natural world.
-          </p>
-        </div>
-
-        <!-- Social & certifications -->
-        <div class="d-flex justify-content-between align-items-center flex-wrap">
-          <!-- Social links -->
-          <div class="d-flex gap-3">
-            <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white fs-4"><i class="bi bi-whatsapp"></i></a>
-            <a href="mailto:info@forceofnature.com" class="text-white fs-4"><i class="fas fa-envelope"></i></a>
-          </div>
-
-          <!-- Cert logos -->
-          <div class="d-flex gap-3 align-items-center mt-3 mt-md-0">
-            <img src="/assets/images/city-and-guilds-logo.png" alt="City & Guilds" style="height: 40px;">
-            <img src="/assets/images/insured-badge.png" alt="Fully Insured" style="height: 40px;">
-            <img src="/assets/images/enviroment-badge.png" alt="eco friendly practices" style="height: 40px;">
-          </div>
-      </div>
-  </footer>
-
+ {% include trust_indicators.html %}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Descriptions for each carousel image
-    const descriptions = [
-        {
-            title: "Expert Tree Pruning",
-            text: "Our skilled arborists meticulously prune trees to enhance their health, appearance, and structural integrity. From crown thinning to deadwood removal, we ensure your trees thrive and look their best."
-        },
-        {
-            title: "Safe Tree Removal",
-            text: "When a tree becomes hazardous or needs to be cleared for new development, our team performs safe and efficient removals. We prioritize safety for your property and our crew."
-        },
-        {
-            title: "Complete Stump Grinding",
-            text: "After tree removal, unsightly stumps can remain. Our stump grinding services completely remove the stump, leaving your landscape clear and ready for new growth or landscaping projects."
-        },
-        {
-            title: "Emergency Storm Cleanup",
-            text: "Storms can cause unexpected damage. We offer rapid response storm cleanup services to clear fallen trees, branches, and debris, restoring safety and order to your property quickly."
-        }
-    ];
-
-    const imageCarousel = document.getElementById('imageCarousel');
-    const descriptionContent = document.getElementById('image-description-content');
-
-    // Update description on carousel slide
-    imageCarousel.addEventListener('slide.bs.carousel', function (event) {
-        // Get the index of the next slide (event.to is the index of the new active slide)
-        const newSlideIndex = event.to;
-        const newDescription = descriptions[newSlideIndex];
-
-        // Update the content in the description column
-        descriptionContent.innerHTML = `
-            <h3 class="card-title text-success">${newDescription.title}</h3>
-            <p class="card-text text-muted">${newDescription.text}</p>
-        `;
-    });
-</script>
 </body>
 </html>
