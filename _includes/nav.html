@@ -1,8 +1,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="/tree-site">
-      <img src="/assets/img/tree-1.jpg"  style="height: 30px; margin-right: 10px;">
+    <a class="navbar-brand d-flex align-items-center" href="{{ '/tree-site' | relative_url }} ">
+      <img src="{{ '/assets/img/tree-1.jpg' | relative_url }}"  style="height: 30px; margin-right: 10px;">
       <span>Force of Nature Tree Works</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -16,17 +16,17 @@
             About Us
           </a>
           <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdownAbout">
-            <li><a class="dropdown-item text-white" href="/tree-site/gallery.html">Gallery</a></li>
-            <li><a class="dropdown-item text-white" href="/tree-site/our-story.html">Our Story</a></li>
-            <li><a class="dropdown-item text-white" href="/tree-site/testimonials.html">Testimonials</a></li>
-            <li><a class="dropdown-item text-white" href="/tree-site/blog.html">Blog</a></li>
+            <li><a class="dropdown-item text-white" href="{{ '//tree-site/gallery.html' | relative_url }}">Gallery</a></li>
+            <li><a class="dropdown-item text-white" href="{{ '//tree-site/our-story.html' | relative_url }}">Our Story</a></li>
+            <li><a class="dropdown-item text-white" href="{{ '//tree-site/testimonials.html' | relative_url }}">Testimonials</a></li>
+            <li><a class="dropdown-item text-white" href="{{ '//tree-site/blog.html' | relative_url }}">Blog</a></li>
           </ul>
         </li>
         <li class="nav-item me-2">
-          <a class="nav-link pill-link" href="/tree-site/contact.html">Contact Us</a>
+          <a class="nav-link pill-link" href="{{ '/tree-site/contact.html | relative_url }}">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link pill-link" href="/tree-site/services.html"><span>Services</span></a>
+          <a class="nav-link pill-link" href="{{ '/tree-site/services.html' | relative_url }}"><span>Services</span></a>
         </li>
       </ul>
     </div>
