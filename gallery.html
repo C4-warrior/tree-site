@@ -9,6 +9,118 @@ layout: default
 
 {% include gallery/main_image.html %}
 
+<style>
+  /* Styling for the main content card */
+  .gallery-page-card {
+    border: none;
+    border-radius: 0.75rem;
+  }
+  .gallery-page-card .card-header {
+    background-color: #28a745;
+    color: white;
+    font-weight: 700;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  
+  /* Adds a pointer cursor and hover effect to the gallery images */
+  .gallery-item-card {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .gallery-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .gallery-item-card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* --- Modal Styling --- */
+  #galleryModal .modal-header {
+      background-color: #28a745;
+      color: white;
+      border-bottom: none;
+  }
+  #galleryModal .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+  #galleryModal .modal-content {
+      border: none;
+      border-radius: 0.5rem;
+  }
+</style>
+
+<div class="container py-5">
+    <!-- Main Card Container -->
+    <div class="card gallery-page-card shadow-lg">
+        <div class="card-header text-center">
+            <h1 class="h3 mb-0">Our Work</h1>
+        </div>
+        <div class="card-body p-4 p-lg-5">
+            <p class="lead text-center mb-5">A showcase of our recent projects. Click on any image to see the details.</p>
+
+            <!-- Gallery Grid -->
+            <div class="row">
+                {% for photo in site.data.gallery %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <!-- This is the clickable card for each photo -->
+                    <div class="gallery-item-card" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                        data-title="{{ photo.title | escape }}"
+                        data-image="{{ photo.image_path | relative_url }}"
+                        data-description="{{ photo.description | escape }}">
+                    <img src="{{ photo.image_path | relative_url }}" alt="{{ photo.title | escape }}">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="galleryModalLabel">Image Title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <img src="" id="modalImage" class="img-fluid mb-3 rounded" alt="Enlarged gallery image">
+        <p id="modalDescription" class="lead"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript to dynamically populate the modal with content -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const galleryModal = document.getElementById('galleryModal');
+  
+  galleryModal.addEventListener('show.bs.modal', function (event) {
+    const card = event.relatedTarget;
+    const title = card.getAttribute('data-title');
+    const imageUrl = card.getAttribute('data-image');
+    const description = card.getAttribute('data-description');
+
+    const modalTitle = galleryModal.querySelector('.modal-title');
+    const modalImage = galleryModal.querySelector('#modalImage');
+    const modalDescription = galleryModal.querySelector('#modalDescription');
+
+    modalTitle.textContent = title;
+    modalImage.src = imageUrl;
+    modalImage.alt = title;
+    modalDescription.textContent = description;
+  });
+});
+</script>
 
 
  {% include trust_indicators.html %}

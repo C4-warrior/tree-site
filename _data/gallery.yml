@@ -1,0 +1,23 @@
+- title: "Hazardous Tree Removal"
+  decription: "Safely dismantling a large, hazardous oak tree in a tight residential space. Our team used expert rigging to ensure no damage to the surrounding property."
+  image_path: "/assets/images/gallery/removal-1.jpg" # Make sure to place your images here
+
+- title: "Crown Thinning & Lifting"
+  description: "Expertly pruning the canopy to improve light penetration and air flow, which enhances the tree's health and appearance. We also lifted the lower branches to provide clearance."
+  image_path: "/assets/images/gallery/pruning-1.jpg"
+
+- title: "Complete Stump Grinding"
+  description: "After removing a tree, we ground the stump 8 inches below the surface, allowing the client to lay new turf for a seamless lawn."
+  image_path: "/assets/images/gallery/stump-1.jpg"
+
+- title: "Emergency Storm Damage"
+  description: "A large limb failed during a high-wind storm, falling on the client's roof. Our 24/7 emergency team responded quickly to remove the limb and prevent further damage."
+  image_path: "/assets/images/gallery/storm-1.jpg"
+
+- title: "Precision Felling"
+  description: "This tree had to be felled in a very specific direction to avoid a nearby glass greenhouse. Careful planning and precise cuts ensured it landed exactly where intended."
+  image_path: "/assets/images/gallery/removal-2.jpg"
+
+- title: "Formal Hedge Trimming"
+  description: "Shaping and trimming a large privet hedge row to create a clean, formal, and uniform appearance for the front of the property."
+  image_path: "/assets/images/gallery/pruning-2.jpg"

@@ -3,3 +3,165 @@ permalink: /tree-site/tree_trimming.html
 layout: default
 ---
 <h1>Tree Trimming</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree Pruning & Trimming | Force of Nature Tree Services</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Use a CSS variable for your theme color */
+    :root {
+      --theme-green: #28a745;
+    }
+
+    body {
+      /* Allows your site's background image to show through */
+      background-color: #f8f9fa; 
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .service-page-section {
+      padding: 60px 0;
+    }
+
+    /* Main card container to hold all content */
+    .service-card {
+        border: none;
+        border-radius: 0.75rem;
+    }
+    
+    .service-card .card-header {
+        background-color: var(--theme-green);
+        color: white;
+        font-weight: 700;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    /* --- Flip Card CSS --- */
+
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      perspective: 1000px;
+      margin: 20px auto;
+      cursor: pointer;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 15px;
+    }
+
+    .flip-card.is-flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: var(--theme-green);
+      color: white;
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-overlay-text {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="service-page-section">
+  <div class="container">
+    <div class="card service-card shadow-lg">
+      <div class="card-header text-center">
+        <h1 class="h3 mb-0">Expert Tree Pruning & Trimming</h1>
+      </div>
+      <div class="card-body p-lg-5">
+        <div class="row align-items-center">
+          
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h4 style="color: var(--theme-green);">Health, Safety, and Aesthetics</h4>
+            <p class="lead">Proper pruning is essential for maintaining the health, structural integrity, and beauty of your trees. It's a proactive investment in the longevity and safety of your landscape.</p>
+            <p>Our certified arborists use expert techniques like crown thinning, lifting, and reduction to remove dead or hazardous branches, improve light penetration, and encourage healthy growth. Regular trimming not only enhances the appearance of your property but also prevents potential damage from falling limbs during storms.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="text-center mb-3">Click or tap the image to see the result!</h5>
+            
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://placehold.co/400x300/868e96/white?text=Overgrown+Tree" alt="Overgrown tree before pruning">
+                  <div class="card-overlay-text">Before</div>
+                </div>
+                <div class="flip-card-back">
+                   <img src="https://placehold.co/400x300/51cf66/white?text=Neatly+Pruned" alt="Neatly pruned tree after trimming">
+                   <div class="card-overlay-text">After</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const flipCard = document.querySelector('.flip-card');
+    flipCard.addEventListener('click', function() {
+      this.classList.toggle('is-flipped');
+    });
+  });
+</script>
+
+</body>
+</html>
