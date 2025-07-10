@@ -8,7 +8,7 @@ layout: default
     <p class="lead text-center mb-5">Discover our expertise through recent projects and impressive transformations.</p>
 
 {% include gallery/main_image.html %}
-
+<!--
 <style>
   /* Styling for the main content card */
   .gallery-page-card {
@@ -58,6 +58,7 @@ layout: default
 
 <div class="container pt-4">
     <!-- Main Card Container -->
+    <!--
     <div class="card gallery-page-card shadow-lg">
         <div class="card-header text-center">
             <h1 class="h3 mb-0">Our Work</h1>
@@ -66,10 +67,12 @@ layout: default
             <p class="lead text-center mb-5">A showcase of our recent projects. Click on any image to see the details.</p>
 
             <!-- Gallery Grid -->
+            <!--
             <div class="row">
                 {% for photo in site.data.gallery %}
                 <div class="col-lg-4 col-md-6 mb-4">
                     <!-- This is the clickable card for each photo -->
+            <!--
                     <div class="gallery-item-card" data-bs-toggle="modal" data-bs-target="#galleryModal"
                         data-title="{{ photo.title | escape }}"
                         data-image="{{ photo.image_path | relative_url }}"
@@ -84,6 +87,7 @@ layout: default
 </div>
 
 <!-- Bootstrap Modal -->
+            <!--
 <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
@@ -100,6 +104,7 @@ layout: default
 </div>
 
 <!-- JavaScript to dynamically populate the modal with content -->
+            <!--
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const galleryModal = document.getElementById('galleryModal');
@@ -120,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modalDescription.textContent = description;
   });
 });
-</script>
+</script>-->
 
 
  {% include instagram_widget.html %}
