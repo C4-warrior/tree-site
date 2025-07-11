@@ -3,3 +3,6 @@ description: Expert tree services with certified arborists.
 baseurl: ""
 url: "https://forceofnaturetreeworks.co.uk"
 #theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
