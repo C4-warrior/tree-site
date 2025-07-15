@@ -1,4 +1,4 @@
-title: Force of Nature Tree Services
+title: Force of Nature Tree Works 
 description: Expert tree services with certified arborists.
 baseurl: ""
 url: "https://forceofnaturetreeworks.co.uk"
@@ -6,3 +6,17 @@ url: "https://forceofnaturetreeworks.co.uk"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+#  - jekyll-picture-tag
+#
+#picture:
+#  source: assets/img       # where your raw images are
+#  output: assets/generated    # where compressed images are saved
+#  presets:
+#    default:
+#      widths: [400, 800, 1200]    # responsive breakpoints
+#      formats: [webp, original]   # modern + fallback
+#      quality: 75                 # good balance of size/quality
+#      sizes: "(max-width: 600px) 400px, 800px"
+#      attributes:
+#        loading: lazy
+#        decoding: async
