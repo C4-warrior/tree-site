@@ -6,12 +6,15 @@ seo_title: "Gallery - Force of Nature Tree Works"
 description: "Explore our gallery showcasing recent projects by Force of Nature Tree Works. View before and after images of tree pruning, removal, and stump grinding in West Yorkshire."
 ---
 <body>
-<section class="container py-5">
+<section class="container ">
+  <div class="container p-4 rounded-3 shadow" style="background-color: rgba(255, 255, 255, 0.8);" >
     <h1 class="text-center mb-4">Our Projects Showcase</h1>
-    <p class="lead text-center mb-5">Discover our expertise through recent projects and impressive transformations.</p>
+    <p class="lead text-center">Discover our expertise through recent projects and impressive transformations.</p>
+  </div>
 
 {% include gallery/main_image.html %}
 
+{% include gallery/grid.html %}
 
  {% include instagram_widget.html %}
 
