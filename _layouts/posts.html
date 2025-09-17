@@ -6,6 +6,7 @@ layout: compress
 
   <div class="flex-grow-1">
     <main class="container  rounded-3 shadow my-5" style="background-color: rgba(255, 255, 255, 0.8);" >
+  {{ content.title | default: page.title | default: site.title | escape | prepend: "<h1 class='mt-4 mb-3'>" | append: "</h1>" }}
   {{ content }}   </main>
   </div>
   {% include footer.html %}
